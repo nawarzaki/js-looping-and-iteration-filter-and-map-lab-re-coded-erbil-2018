@@ -27,13 +27,7 @@ let y =[]
    if (key.key === c.key ){
     y.push(c.key = key.key)
   }
-  return  function (ar) {
-    let z = x.filter(function (c) {
-      return c.revenue >= revenue
-
-    }))
-    
-  }
+  return  y
   })
   return x
   }
