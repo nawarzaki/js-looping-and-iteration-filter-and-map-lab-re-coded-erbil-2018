@@ -37,11 +37,11 @@ function exactMatch(drivers, key) {
   function exactMatchToList(drivers, key) {
 
       let x = drivers.filter(function (c) {
-      let y =''
+      let y =[]
        if (key.name === c.name){
-        y = c.name.name
+        y.push(c.name)
       }else if ( key.revenue === c.revenue ){
-        y = c.revenue.name
+        y.push(c.revenue)
       }
       return  y
       })
