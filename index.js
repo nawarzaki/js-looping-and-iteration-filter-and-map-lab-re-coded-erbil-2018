@@ -21,8 +21,8 @@ return y
 }
 
 function exactMatch(drivers, key) {
-  let key = {name:"", revenue: ""}
-  
+   key = {name:"", revenue: ""}
+
   let x = drivers.map(function (c) {
 let y =[]
    if (key.name === c.name || key.revenue === c.revenue ){
