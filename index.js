@@ -35,9 +35,15 @@ function exactMatch(drivers, key) {
   }
 
   function exactMatchToList(drivers) {
-    let x = drivers.filter(function (c) {
-      return c.revenue >= revenue
-
-    })
-    return x
+    
+      let x = drivers.filter(function (c) {
+      let y =''
+       if (key.name === c.name){
+        y = c.name
+      }else if ( key.revenue === c.revenue ){
+        y = c.revenue
+      }
+      return  y
+      })
+      return x
   }
