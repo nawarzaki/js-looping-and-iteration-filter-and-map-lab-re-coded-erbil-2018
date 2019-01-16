@@ -22,14 +22,12 @@ return y
 
 function exactMatch(drivers, key) {
 
-  let x = drivers.map(function (c) {
-let y =[]
+  let x = drivers.filter(function (c) {
+  let y = 
    if (key.name === c.name){
-    y.push(c)
+    y = c.name
   }else if ( key.revenue === c.revenue ){
-    y.push(c)
-  }else {
-    y
+    y = c.revenue
   }
   return  y
   })
