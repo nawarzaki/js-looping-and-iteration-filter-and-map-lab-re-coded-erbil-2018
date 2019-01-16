@@ -39,9 +39,9 @@ function exactMatch(drivers, key) {
       let x = drivers.filter(function (c) {
       let y =[]
        if (key.name === c.name){
-        y.push(c.name)
+        y = c.name
       }else if ( key.revenue === c.revenue ){
-        y.push(c.revenue)
+        y = c.revenue
       }
       return  y
       })
