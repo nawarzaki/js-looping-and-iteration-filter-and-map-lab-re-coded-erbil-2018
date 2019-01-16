@@ -22,7 +22,7 @@ return y
 
 function exactMatch(drivers, key) {
 
-  let x = drivers.filter(function (c) {
+  let x = drivers.map(function (c) {
 let y =[]
    if (key.key === c.key ){
     y.push(c.key = key.key)
