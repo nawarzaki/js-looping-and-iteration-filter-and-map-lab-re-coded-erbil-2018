@@ -34,14 +34,14 @@ function exactMatch(drivers, key) {
   return x
   }
 
-  function exactMatchToList(drivers) {
+  function exactMatchToList(drivers, key) {
 
       let x = drivers.filter(function (c) {
       let y =''
        if (key.name === c.name){
-        y = c.name.name
+        y = c.name
       }else if ( key.revenue === c.revenue ){
-        y = c.revenue.name
+        y = c.revenue
       }
       return  y
       })
