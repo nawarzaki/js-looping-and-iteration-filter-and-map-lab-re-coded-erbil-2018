@@ -21,13 +21,13 @@ return y
 }
 
 function exactMatch(drivers, key) {
-  
+
   let x = drivers.map(function (c) {
 let y =[]
-   if (key.name === c.name || key.revenue === c.revenue ){
+   if (key.name === c.name){
     y.push(c)
-  }else {
-    y
+  }else if ( key.revenue === c.revenue ){
+    y.push(c)
   }
   return  y
   })
