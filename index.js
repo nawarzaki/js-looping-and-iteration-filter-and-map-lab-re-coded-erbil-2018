@@ -33,3 +33,11 @@ function exactMatch(drivers, key) {
   })
   return x
   }
+
+  function exactMatchToList(drivers) {
+    let x = drivers.filter(function (c) {
+      return c.revenue >= revenue
+
+    })
+    return x
+  }
