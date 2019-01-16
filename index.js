@@ -29,7 +29,7 @@ let y =[]
   }else if ( key.revenue === c.revenue ){
     y.push(c)
   }else {
-    []
+    y
   }
   return  y
   })
