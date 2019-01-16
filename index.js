@@ -28,6 +28,8 @@ let y =[]
     y.push(c)
   }else if ( key.revenue === c.revenue ){
     y.push(c)
+  }else {
+    []
   }
   return  y
   })
